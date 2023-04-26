@@ -2,12 +2,14 @@ name: test
 on:
   schedule:
     - cron: '30 5,12 * * *'
+  push:
+    branches: [ main ]
   workflow_dispatch:
   
 jobs:
   HyperExecute-dotnet-Playwright:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 90
     strategy:
       fail-fast: false
     steps:
