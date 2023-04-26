@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
   
 jobs:
-  HyperExecute-dotnet-Playwright:
+  test:
     runs-on: ubuntu-latest
     timeout-minutes: 90
     strategy:
